@@ -1,0 +1,132 @@
+# css-interview-questions (2025–2026)
+
+
+<img width="385" height="196" alt="image" src="https://github.com/user-attachments/assets/efde9464-c333-4152-af34-d96d593de9da" />
+
+```jsx
+<div class="container">
+  <div class="row">
+    <div class="box">A</div>
+    <div class="box">B</div>
+  </div>
+  <div class="box c">C</div>
+</div>
+
+```
+
+```jsx
+.container {
+  width: 400px;
+  border: 2px solid black;
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.c {
+  height: 100px;
+}
+
+```
+
+<img width="392" height="208" alt="image" src="https://github.com/user-attachments/assets/158c2853-da9f-469c-9222-0a19f16196d1" />
+
+```jsx
+<div class="container">
+  <div class="row">
+    <div class="box">A</div>
+    <div class="box">B</div>
+  </div>
+  <div class="row">
+    <div class="box">C</div>
+    <div class="box">D</div>
+  </div>
+</div>
+
+```
+
+```jsx
+.container {
+  width: 400px;
+  border: 2px solid black;
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+```
+
+<img width="575" height="196" alt="image" src="https://github.com/user-attachments/assets/74848c26-7025-442e-bda8-fee5dea530b7" />
+
+```jsx
+<div class="container">
+  <div class="row top">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+
+  <div class="row bottom">
+    <div class="box d">D</div>
+    <div class="box e">E</div>
+  </div>
+</div>
+
+```
+
+```jsx
+.container {
+  width: 600px;
+  border: 2px solid black;
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Top row: 3 equal boxes */
+.top .box {
+  flex: 1;
+}
+
+/* Bottom row: D bigger than E */
+.d {
+  flex: 2;
+}
+
+.e {
+  flex: 1;
+}
+
+```
