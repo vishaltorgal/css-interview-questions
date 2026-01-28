@@ -130,3 +130,66 @@
 }
 
 ```
+
+## **Media Query**
+
+```jsx
+<div class="container">
+  <div class="box">A</div>
+  <div class="box">B</div>
+  <div class="box">C</div>
+</div>
+
+```
+
+```jsx
+.container {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+```
+
+***Result***
+- Desktop → A B C in a row
+- Mobile → A B C stacked
+
+## **Why order matters**
+
+***For screen ≤ 480px***
+- max-width: 768px matches
+- max-width: 480px also matches
+
+👉 The last rule should be the smallest screen, so it overrides correctly.
+
+```jsx
+/* Desktop */
+.box {
+  width: 300px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {}
+
+/* Mobile */
+@media (max-width: 480px) {}
+
+```
+❌ ***Wrong order (common mistake)***
+```jsx
+@media (max-width: 480px) { ... }
+@media (max-width: 768px) { ... }
+
+```
