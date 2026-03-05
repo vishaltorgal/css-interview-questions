@@ -193,3 +193,37 @@
 @media (max-width: 768px) { ... }
 
 ```
+
+### Grid 
+
+***HTML***
+```jsx
+<div class="grid-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+</div>
+```
+***CSS***
+```jsx
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.box {
+  background: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+```
+
+`Explanation`
+
+- display: grid → enables grid layout
+- grid-template-columns: repeat(3,1fr) → 3 equal columns
+- gap → space between grid items
