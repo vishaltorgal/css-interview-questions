@@ -194,7 +194,9 @@
 
 ```
 
-### Grid 
+## Grid 
+
+<img width="630" height="145" alt="image" src="https://github.com/user-attachments/assets/ec646382-0391-42dd-bf0d-357ddeb190ce" />
 
 ***HTML***
 ```jsx
